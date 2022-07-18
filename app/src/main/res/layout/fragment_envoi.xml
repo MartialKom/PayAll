@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Acceuil"
+    android:background="@drawable/fondblanc">
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lnumR"
+        android:hint="Numero du recepteur"
+        android:textColorHint="#F8F5F5"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#7C3D29"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="#C7BCBC"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/ic_smartphone_black_24dp"
+            android:drawablePadding="15dp"
+            android:id="@+id/numR"
+            android:inputType="phone"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Montant"
+        android:textColorHint="#F8F5F5"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background= "#7C3D29"
+        android:id="@+id/lmontant"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+            android:drawablePadding="15dp"
+            android:textColor="#C7BCBC"
+            android:inputType="number"
+            android:textSize="20dp"
+            android:id="@+id/montantE"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Code secret"
+        android:textColorHint="#F8F5F5"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background= "#7C3D29"
+        android:id="@+id/lcodeS"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="15dp"
+            android:textColor="#C7BCBC"
+            android:inputType="number"
+            android:textSize="20dp"
+            android:id="@+id/codeSE"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/validEnvoi"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:backgroundTint="#DF4C09"
+        android:text="Valider"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:onClick="submitEnvoi"
+
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:layout_gravity="center_horizontal"
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Envoi d'Argent"
+        android:textColor="#DF4C09"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="45dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="serif-monospace"
+        />
+
+
+
+</FrameLayout>

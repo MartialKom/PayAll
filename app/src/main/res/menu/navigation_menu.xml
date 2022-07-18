@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menuAccueil"
+    android:icon="@drawable/ic_home_black_24dp"
+    android:title="Accueil"
+    />
+    <item android:id="@+id/menuEnvoi"
+        android:icon="@drawable/ic_send_black_24dp"
+        android:title="Envoi d'argent"
+        />
+    <item android:id="@+id/menuRetrait"
+        android:icon="@drawable/ic_call_received_black_24dp"
+        android:title="Retrait d'argent"
+        />
+    <item android:id="@+id/menuModification"
+        android:icon="@drawable/ic_edit_black_24dp"
+        android:title="Modifier mon compte"
+        />
+
+    <item android:id="@+id/menuDeconnection"
+        android:icon="@drawable/ic_arrow_back_black_24dp"
+        android:title="Se deconnecter"
+        />
+
+</menu>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/menuAccueil">
+
+    <fragment
+        android:id="@+id/menuAccueil"
+        android:name="cm.pfe.payall.ProfileFragment"
+        android:label="Acceuil"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/menuEnvoi"
+        android:name="cm.pfe.payall.EnvoiFragment"
+        android:label="Envoi d'Argent"
+        tools:layout="@layout/fragment_envoi" />
+    <fragment
+        android:id="@+id/menuRetrait"
+        android:name="cm.pfe.payall.RetraitFragment"
+        android:label="Retrait d'Argent"
+        tools:layout="@layout/fragment_retrait" />
+    <fragment
+        android:id="@+id/menuModification"
+        android:name="cm.pfe.payall.ModifFragment"
+        android:label="Modifier mon compte"
+        tools:layout="@layout/fragment_modif" />
+    <activity
+        android:id="@+id/menuDeconnection"
+        android:name="cm.pfe.payall.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+</navigation>
